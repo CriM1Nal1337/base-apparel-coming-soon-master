@@ -1,10 +1,138 @@
-body{
+body {
     height: 100vh;
     flex-direction: column;
-}
-
-body,.container{
+    font-family: 'Josefin Sans', sans-serif;
+    background: no-repeat url(../images/bg-pattern-desktop.svg);
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.container {
+    max-width: 144rem;
+    display: grid;
+    grid-template-areas:
+        "logo img"
+        "base-apparel img";
+}
+
+.logo {
+    grid-area: logo;
+    width: 16rem;
+    margin-bottom: 11.5rem;
+    margin: 6.5rem 0 0 20rem;
+}
+
+.base-apparel {
+    grid-area: base-apparel;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 22rem 10rem 20rem;
+    margin-top: 6rem;
+}
+
+.base-apparel .title .span {
+    color: var(--DesaturatedRed);
+    font-weight: 300;
+}
+
+.base-apparel .title {
+    font-size: 6.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5rem;
+    font-weight: 600;
+    color: var(--DarkGrayishRed);
+}
+
+.base-apparel .p {
+    font-size: 1.6rem;
+    color: hsla(0, 36%, 70%, 0.752);
+    line-height: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.email {
+    position: relative;
+}
+
+.base-apparel .inp-email {
+    height: 5.5rem;
+    width: 44.5rem;
+    border-radius: 3rem;
+    border: 2px solid var(--DesaturatedRed);
+    color: var(--DesaturatedRed);
+    padding-left: 3rem;
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    font-weight: 600;
+    color: var(--DesaturatedRed);
+}
+
+.inp-email::placeholder {
+    color: var(--DesaturatedRed);
+    padding-left: 0.4rem;
+}
+
+.inp-email:active{
+    color: var(--DesaturatedRed);
+}
+
+.inp-email:focus {
+    color: var(--DesaturatedRed);
+    border: 2px solid var(--DesaturatedRed);
+    padding-left: 3rem;
+}
+
+.inp-email:focus-visible {
+    border: 2px solid var(--DesaturatedRed);
+    outline: none;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10rem;
+    height: 5.5rem;
+    border-radius: 3rem;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    justify-content: center;
+    cursor: pointer;
+}
+
+.arrow {
+    height: 2rem;
+    width: 1rem;
+    cursor: pointer;
+}
+
+.img-base-apparel {
+    grid-area: img;
+}
+
+.hide {
+    visibility: hidden;
+    display: none;
+}
+
+.base-apparel .span-error{
+    color: var(--SoftRed);
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-left: 3rem;
+}
+
+.base-apparel .error-img{
+    width: 2.5rem;
+    position: absolute;
+    top: 1.6rem;
+    right: 11.5rem;
+}
+
+.inp-email.error{
+    border: 2px solid var(--SoftRed);
 }

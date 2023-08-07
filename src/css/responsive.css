@@ -1,0 +1,68 @@
+@media (max-width: 1439px) {
+    body{
+        max-width: 375px;
+        align-items: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 375px;
+    }
+
+    .logo {
+        order: 1;
+        margin: 3.2rem;
+        padding: 0;
+        width: 10rem;
+    }
+
+    .base-apparel {
+        order: 3;
+        margin-top: 0;
+        padding: 0;
+        max-width: 375px;
+    }
+
+    .base-apparel .title{
+        text-align: center;
+        font-size: 4rem;
+        letter-spacing: 1.1rem;
+    }
+
+    .base-apparel .p{
+        text-align: center;
+        font-size: 1.4rem;
+        line-height: 2.3rem;
+        padding: 0 3rem;
+        margin-bottom: 1.1rem;
+    }
+
+    .img-base-apparel {
+        order: 2;
+        max-width: 375px;
+        margin-bottom: 6rem;
+    }
+
+    .email{
+        width: 34.5rem;
+        padding-left: 3.2rem;
+        height: 4.6rem;
+    }
+
+    .base-apparel .inp-email {
+        height: 4.6rem;
+        width: 31rem;
+    }
+
+    .btn{
+        height: 4.6rem;
+        width: 6.5rem;
+    }
+
+    .base-apparel .error-img{
+        top: 1rem;
+        right: 7rem;
+    }
+}
